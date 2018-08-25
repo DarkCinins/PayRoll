@@ -1,6 +1,7 @@
 package Employees;
 
 import Informations.Addresses;
+import Informations.PaymentMethod;
 
 /**
  * Created by alunoic on 24/08/18.

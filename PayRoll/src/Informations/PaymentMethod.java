@@ -1,4 +1,4 @@
-package Employees;
+package Informations;
 
 /**
  * Created by alunoic on 24/08/18.
