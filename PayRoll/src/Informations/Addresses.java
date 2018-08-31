@@ -1,7 +1,10 @@
 package Informations;
 
-import Exceptions.ExceptionsAndGetString;
+import java.util.Scanner;
 
+/**
+ * Created by alunoic on 24/08/18.
+ */
 public class Addresses
 {
     private String street;
@@ -14,40 +17,35 @@ public class Addresses
         setStreet();
         setNeighborhood();
         setCep();
-        setHouseNumber();
+    }
+
+    private String getString()
+    {
+        Scanner input = new Scanner(System.in);
+        return input.nextLine();
     }
 
     public void setStreet()
     {
         System.out.println("Rua:");
-        this.street = ExceptionsAndGetString.getString();
+        this.street = getString();
     }
 
     public void setNeighborhood()
     {
         System.out.println("Bairro:");
-        this.neighborhood = ExceptionsAndGetString.getString();
+        this.neighborhood = getString();
     }
 
     public void setCep()
     {
         System.out.println("CEP:");
-        this.cep = ExceptionsAndGetString.getString();
+        this.cep = getString();
     }
 
     public void setHouseNumber()
     {
         System.out.println("Número da casa:");
-        this.houseNumber = ExceptionsAndGetString.tryingCatchInt();
-    }
-
-    @Override
-    public String toString()
-    {
-        return "Endereço:" + "\n"
-                + "Rua - " + this.street + "\n"
-                + "Bairro - " + this.neighborhood + "\n"
-                + "Número - " + this.houseNumber + "\n"
-                + "CEP - " + this.cep + "\n";
+        //this.houseNumber =
     }
 }
